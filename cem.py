@@ -1,3 +1,6 @@
+#By William Fraher
+#April 19, 2018
+
 import gym
 import numpy as np
 import matplotlib.pyplot as plt
