@@ -46,7 +46,7 @@ for i in range(iterations):
                 break
         if t == max_timesteps and not d:
             results.append([e,rewards])
-    print 'Episode ' + str(i) +' finished with reward ' + str(results[np.argmax(np.asarray(results)[:,1])][1])
+    print 'Iteration ' + str(i) +' finished with reward ' + str(results[np.argmax(np.asarray(results)[:,1])][1])
     total_rewards.append(results[np.argmax(np.asarray(results)[:,1])][1]) #saves the reward to graph later
     for b in range(keep_count): #takes the best keep_count thetas
         best.append(results[np.argmax(np.asarray(results)[:,1])][0]) #add the best one to a new list
